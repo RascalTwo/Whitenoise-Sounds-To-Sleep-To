@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MyActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Noise"
+        android:onClick="startLoop"
+        android:textColor="#ffffff"
+        android:id="@+id/startButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="50dp"
+        android:alpha="100"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Noise"
+        android:onClick="stopLoop"
+        android:textColor="#ffffff"
+        android:id="@+id/stopButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="50dp"
+        android:alpha="100"
+        android:clickable="true"
+        android:enabled="true"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toEndOf="@+id/stopButton"
+        android:clickable="false"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="134dp"
+        android:layout_below="@+id/stopButton"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nature"
+            android:id="@+id/natureRadio"
+            android:textSize="35dp"
+            android:clickable="true"
+            android:enabled="true"
+            android:checked="true"
+            android:textColor="#ffff"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Listened To For: "
+            android:id="@+id/natureText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="White"
+            android:id="@+id/whiteRadio"
+            android:textSize="35dp"
+            android:textColor="#ffff"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Listened To For: "
+            android:id="@+id/whiteText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pink"
+            android:id="@+id/pinkRadio"
+            android:textSize="35dp"
+            android:textColor="#ffff"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Listened To For: "
+            android:id="@+id/whaleText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whale"
+            android:id="@+id/whaleRadio"
+            android:textSize="35dp"
+            android:textColor="#ffff"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Listened To For: "
+            android:id="@+id/pinkText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textColor="#ffffff" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
